@@ -1,0 +1,29 @@
+.sectionTitle__number {
+  position: relative;
+}
+
+.sectionTitle__number:after {
+  position: absolute;
+  content: url("../../assets/images/drawn-circle.svg");
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+
+@media screen and (max-width: 768px) {
+  .sectionTitle__numberWrapper img {
+    max-width: 80px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sectionTitle {
+    padding-top: 30px;
+  }
+
+  .sectionTitle--Footer {
+    padding-top: 0;
+  }
+}

@@ -1,0 +1,24 @@
+.footer__Wrapper {
+  background-image: url("img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footerBottom {
+  height: 210px;
+  border-bottom: 1px solid #000;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.20) 100%);
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+@media screen and (max-width: 640px) {
+  .footerBottom {
+    height: fit-content;
+    position: relative;
+  }
+}

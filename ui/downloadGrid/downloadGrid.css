@@ -1,0 +1,50 @@
+.downloadGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 58px;
+  row-gap: 38px;
+}
+
+.downloadGrid__item {
+  border-radius: 150px;
+  border: 1px solid #000;
+  background: rgba(255, 255, 255, 0.20);
+  backdrop-filter: blur(4px);
+  padding: 8px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 160px;
+  max-width: 160px;
+  transition: all .2s ease-in-out;
+}
+
+.downloadGrid__item:hover {
+  background-color: #C4C4C4;
+}
+
+.downloadGrid__item:hover .downloadGrid__text {
+ color: white;
+}
+
+.downloadGrid__text {
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+  margin: 0 auto;
+  color: #000000;
+  margin-bottom: 4px;
+  transition: all .2s ease-in-out;
+}
+
+@media screen and (max-width: 640px) {
+  .downloadGrid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 18px;
+    row-gap: 28px;
+  }
+
+  .downloadGrid__item {
+    min-width: unset;
+  }
+}

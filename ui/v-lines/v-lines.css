@@ -1,0 +1,141 @@
+.v-lines {
+  position: absolute;
+  height: 100%;
+  width: fit-content;
+  top: 0;
+  z-index: 0;
+}
+
+.v-lines:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 1px;
+  background-color: #000;
+  z-index: 0;
+}
+
+.v-lines:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 2px;
+  background-color: #000;
+}
+
+/* INTRO */
+.v-lines--intro {
+  left: -45px;
+}
+
+.v-lines--intro:after {
+  left: -52px;
+}
+
+/* STORIES */
+.v-lines--stories {
+  right: -300px;
+  transform: scaleX(-1);
+}
+
+.v-lines--stories:after {
+  right: -37px;
+}
+
+/* JEALOUSY */
+.v-lines--jealousy {
+  left: 380px;
+  transform: scaleX(-1);
+}
+
+.v-lines--jealousy:after {
+  right: -34px;
+}
+
+/* NAMES */
+.v-lines--names {
+  right: -68px;
+  transform: scaleX(-1);
+}
+
+.v-lines--names:after {
+  right: -34px;
+}
+
+/* COMICS */
+.v-lines--comics {
+  left: -102px;
+  transform: scaleX(-1);
+}
+
+.v-lines--comics:after {
+  right: -34px;
+}
+
+@media screen and (max-width: 1280px) {
+  /* INTRO */
+  .v-lines--intro {
+    left: 104px;
+  }
+
+  .v-lines--intro:after {
+    left: -19px;
+  }
+
+  /* STORIES */
+  .v-lines--stories {
+    right: 160px;
+    transform: scaleX(-1);
+  }
+
+  .v-lines--stories:after {
+    right: -34px;
+  }
+
+  /* JEALOUSY */
+  .v-lines--jealousy {
+    left: unset;
+    right: 40px;
+    transform: scaleX(-1);
+  }
+
+  .v-lines--jealousy:after {
+    right: -34px;
+  }
+
+  /* NAMES */
+  .v-lines--names {
+    right: 161px;
+    transform: scaleX(-1);
+  }
+
+  .v-lines--names:after {
+    right: -34px;
+  }
+
+  /* COMICS */
+  .v-lines--comics {
+    left: 32px;
+    transform: scaleX(-1);
+  }
+
+  .v-lines--comics:after {
+    right: -34px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .v-lines--stories {
+    display: none;
+  }
+
+  .v-lines--jealousy {
+    display: none;
+  }
+
+  /* NAMES */
+  .v-lines--names {
+    right: 67px;
+    transform: scaleX(-1);
+  }
+}

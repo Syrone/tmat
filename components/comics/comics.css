@@ -1,0 +1,82 @@
+.comics__Wrapper {
+  background-image: url("img/bg.png");
+}
+
+.comics__gridWrapper {
+  z-index: 1;
+  position: relative;
+}
+
+.comics__gridWrapper-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 20px 40px -10px rgba(0, 0, 0, 0.50);
+  transform: rotate(-3deg);
+  background: #fff;
+  z-index: 0;
+}
+
+.comics__gridWrapper-grid {
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.25);
+  background-image: url("img/comics-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: minmax(100px, 328px) minmax(20px, 83px) minmax(50px, 213px);
+  grid-template-rows: minmax(min-content, max-content);
+}
+
+.comics__gridWrapper-grid-item img {
+  object-fit: cover;
+}
+
+.comics__gridWrapper-grid-item .slick-list {
+  height: 100% !important;
+}
+
+.comics__gridWrapper-grid-item .slick-track {
+  height: 100% !important;
+}
+
+.comics__gridWrapper-grid-item--1 {
+  grid-column: 1/3;
+}
+
+.comics__gridWrapper-grid-item--3 {
+  grid-column: 1/4;
+}
+
+.comics__gridWrapper-grid-item--4 {
+  grid-column: 1/2;
+}
+
+.comics__gridWrapper-grid-item--5 {
+  grid-column: 2/4;
+}
+
+.comics__gridWrapper-grid-item {
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 1280px) {
+  .comics__gridWrapper-bg {
+    left: 49%;
+    top: -30px;
+    transform: rotate(-3deg) translateX(-50%);
+  }
+
+  .comics__gridWrapper-grid {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .comics__gridWrapper-grid {
+
+  }
+}

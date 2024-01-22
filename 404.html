@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+		<!-- Encoding -->
+		<meta charset="UTF-8">
+
+		<!-- Language -->
+		<meta http-equiv="content-language" content="ru"/>
+
+		<!-- Author -->
+		<meta name="author" content="Ruslan Feduleyev">
+
+		<!-- Viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Title/Description -->
+		<title>Meta title</title>
+		<meta name="description" content="Meta description"/>
+
+		<!-- fonts.css -->
+		<link rel="stylesheet" href="assets/css/fonts.css">
+
+		<!-- normalize.css -->
+		<link rel="stylesheet" href="assets/css/normalize.css">
+
+		<!-- Global CSS file -->
+		<link rel="stylesheet" href="assets/css/style.css">
+
+		<!-- SlickSlider CDN -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+					integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+					crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+		<!-- Tailwind -->
+		<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+
+<main role="main" class="main-content main-content--404" id="main-content">
+		<!-- components/header -->
+		<header class="header__Wrapper">
+				<div class="container">
+
+						<!-- header inner -->
+						<div class="h-full flex items-center justify-between">
+
+								<!-- download -->
+								<a href="#" class="hidden sm:flex items-center justify-between gap-4">
+										<span class="font-bold">СКАЧАТЬ</span>
+										<img src="components/header/img/download-arrow.svg"
+												 alt="download">
+								</a>
+
+								<!-- logo -->
+								<img src="components/header/img/logo.svg"
+										 alt="logo"
+										 class="max-w-[90px]">
+
+								<!-- contents -->
+								<a class="burgerIcon flex items-center justify-between gap-4">
+										<span class="font-bold">СОДЕРЖАНИЕ</span>
+										<img src="components/header/img/three-dots.svg"
+												 alt="three-dots"
+												 class="burgerIcon__dots">
+								</a>
+						</div>
+				</div>
+		</header>
+
+		<!-- components/headerPopup -->
+		<div class="header__popupWrapper">
+				<div class="header__popup relative">
+
+						<div class="header__popup-lines--Fat">
+						</div>
+						<div class="header__popup-lines--Thin"></div>
+
+						<img src="components/header/img/close.svg"
+								 alt="close"
+								 class="absolute right-[28px] top-[28px] max-w-[38px] cursor-pointer header__popup-close">
+
+						<div class="relative z-[101] header__popup-ListWrapper">
+								<!-- title -->
+								<div class="header__popup-title">
+										ТЬМАТЬ
+								</div>
+
+								<!-- list -->
+								<ul class="header__popup-ul">
+										<li class="header__popup-ul-li">
+												<a href="#">9 рассказов</a>
+										</li>
+										<li class="header__popup-ul-li">
+												<a href="#">Ревность</a>
+										</li>
+										<li class="header__popup-ul-li">
+												<a href="#">Имена</a>
+										</li>
+										<li class="header__popup-ul-li">
+												<a href="#">Не корми Тьму</a>
+										</li>
+								</ul>
+
+								<!-- list -->
+								<ul class="header__popup-ul">
+										<li class="header__popup-ul-li">
+												<a href="#">Скачать</a>
+										</li>
+										<li class="header__popup-ul-li">
+												<a href="#">Контакты</a>
+										</li>
+								</ul>
+						</div>
+
+						<canvas class="grain"></canvas>
+				</div>
+		</div>
+
+		<section class="intro__Wrapper--404">
+				<div class="container">
+						<div class="flex flex-col gap-4 justify-center items-center py-[150px]">
+								<h1 class="text-[120px] md:text-[240px]">
+										404
+								</h1>
+								<p class="text-center font-bold text-[24px] md:text-[48px] uppercase text-white">
+										ops, такой страницы нет
+								</p>
+								<a href="index.html" class="font-bold text-[24px] md:text-[48px] px-[15px] py-[5px] border rounded-[150px] text-white hover:bg-white hover:text-black">
+										на главную
+								</a>
+						</div>
+				</div>
+		</section>
+
+		<!-- components/footer -->
+		<footer class="footer__Wrapper relative pb-0 sm:pb-[210px]">
+				<div class="footerBottom">
+						<div class="container">
+								<div class="flex flex-col gap-8 items-center pb-[35px] sm:pb-0 pt-[35px] text-white max-w-[650px] mx-auto text-center">
+										<h2 class="text-3xl">
+												Вы всегда можете написать мне:
+										</h2>
+
+										<div class="flex-col sm:flex-row flex items-center justify-between w-full gap-4">
+												<a href="#"
+													 class="font-bold text-3xl">
+														Facebook
+												</a>
+
+												<a href="mailto:t’mat’@fdfsdf.com" class="mt-[4px] text-xl">
+														t’mat’@fdfsdf.com
+												</a>
+
+												<a href="#"
+													 class="font-bold text-3xl">
+														Telegram
+												</a>
+										</div>
+
+										<div class="">
+												<strong>2023 © Vettsel |</strong> Все права защищены
+										</div>
+								</div>
+						</div>
+				</div>
+		</footer>
+
+		<canvas id="noise" class="noise"></canvas>
+		<div class="vignette"></div>
+</main>
+
+<!-- jQuery CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+				integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+				crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- SlickSlider CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+				integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+				crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Global script -->
+<script src="assets/js/index.js"></script>
+
+
+<!-- Component scripts -->
+<script src="components/header/header.js"></script>
+<script src="components/footer/footer.js"></script>
+
+<script src="assets/js/old_film/TweenMax.min.js"></script>
+<script src="assets/js/old_film/old_film.js"></script>
+
+</body>
+</html>
