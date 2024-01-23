@@ -5,6 +5,7 @@
 .names__cards-item {
   box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  transition: transform 300ms ease-in-out;
 }
 
 .names__cards-item:hover {
@@ -36,6 +37,26 @@
   z-index: 4;
   transform: rotate(-6.66deg);
   top: 60px;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .names__cards:hover .names__cards-item:nth-child(1) {
+    transform: rotate(-11.812deg) translateY(-10%) translateX(-8vw);
+  }
+  
+  .names__cards:hover .names__cards-item:nth-child(2) {
+    transform: initial;
+  }
+  
+  .names__cards:hover .names__cards-item:nth-child(3) {
+    transform: rotate(24.653deg) translateY(-20%) translateX(8vw);
+  }
+  
+  .names__cards:hover .names__cards-item:nth-child(4) {
+    transform: rotate(-6.66deg) translateY(0%) translateX(10vw);
+  }
+
 }
 
 @media screen and (max-width: 1024px) {

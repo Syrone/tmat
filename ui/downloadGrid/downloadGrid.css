@@ -5,6 +5,26 @@
   row-gap: 38px;
 }
 
+.downloadGrid__list > li > h3 {
+  font-family: 'AnonymousPro-Regular', sans-serif;
+  font-style: initial;
+  text-transform: initial;
+}
+
+.downloadGrid__list > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.downloadGrid__list > li:not(:first-child, :last-child) {
+  margin-bottom: 28px;
+}
+
+.downloadGrid__list > li:first-child {
+  margin-bottom: 48px;
+}
+
 .downloadGrid__item {
   border-radius: 150px;
   border: 1px solid #000;
@@ -14,6 +34,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-shrink: 0;
   min-width: 160px;
   max-width: 160px;
   transition: all .2s ease-in-out;
@@ -37,14 +58,26 @@
   transition: all .2s ease-in-out;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1024px) {
   .downloadGrid {
     grid-template-columns: 1fr 1fr;
     column-gap: 18px;
     row-gap: 28px;
   }
+}
+
+@media screen and (max-width: 640px) {
 
   .downloadGrid__item {
     min-width: unset;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .downloadGrid {
+    grid-template-columns: 1fr;
+    column-gap: 18px;
+    row-gap: 28px;
   }
 }
