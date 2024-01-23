@@ -1,14 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+	const imageNames = ['1.png', '20.jpg', '21.jpg'];
+
 	Array.from(document.querySelectorAll('.distortion')).forEach((item, index) => {
 		const images = Array.from(item.querySelectorAll('img'))
+		const imageIndex = index % imageNames.length;
 		let distorion = new hoverEffect({
 			parent: item,
 			intensity: 0.3,
 			imagesRatio: 347 / 257,
 			image1: images[0].getAttribute('src'),
 			image2: images[1].getAttribute('src'),
-			displacementImage: `assets/images/distortion-effect/${index + 1}.jpg`,
+			displacementImage: `assets/images/distortion-effect/${imageNames[imageIndex]}`,
 		});
 
 		const canvas = item.querySelector('canvas')
@@ -40,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		});
 		
-		// Настройка наблюдения за изменениями атрибутов элемента canvas
 		observer.observe(canvas, { attributes: true });
 	})
 
