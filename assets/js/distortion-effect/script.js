@@ -1,17 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-	const imageNames = ['1.png', '20.jpg', '21.jpg'];
-
+	/** (Start) Hover Distortion Effect **/
 	Array.from(document.querySelectorAll('.distortion')).forEach((item, index) => {
 		const images = Array.from(item.querySelectorAll('img'))
-		const imageIndex = index % imageNames.length;
 		let distorion = new hoverEffect({
 			parent: item,
 			intensity: 0.3,
 			imagesRatio: 347 / 257,
 			image1: images[0].getAttribute('src'),
 			image2: images[1].getAttribute('src'),
-			displacementImage: `assets/images/distortion-effect/${imageNames[imageIndex]}`,
+			displacementImage: `assets/images/distortion-effect/1.png`,
 		});
 
 		const canvas = item.querySelector('canvas')
@@ -45,14 +43,12 @@ document.addEventListener('DOMContentLoaded', () => {
 		
 		observer.observe(canvas, { attributes: true });
 	})
+	/** (End) Hover Distortion Effect **/
 
-	// var distortionEffect = new hoverEffect({
-	// 	parent: document.querySelector('.distortion'),
-	// 	intensity: 0.3,
-	// 	imagesRatio: 347 / 257,
-	// 	image1: 'components/stories/img/2.png',
-	// 	image2: 'components/stories/img/2.png',
-	// 	displacementImage: 'assets/images/distortion-effect/10.jpg'
-	// });
+	/** (Start) Slider Distortion Effect **/
+
+	
+
+	/** (End) Slider Distortion Effect **/
 
 })

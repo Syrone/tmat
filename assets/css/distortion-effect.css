@@ -25,3 +25,11 @@
 .card-image > img:not(.storiesSlider__slide-middleImg, .storiesSlider__slide-bottomImg) {
 	display: none;
 }
+
+.storiesSlider__slide-topImg {
+	will-change: transform;
+}
+
+.storiesSlider__slide-topImg.storiesSlider__slide-topImg--Active {
+	transform: rotate(5deg) scale(1.1);
+}
