@@ -74,7 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
 				const srcImage = image.getAttribute('src')
 				arraySrcImage.push(srcImage)
 			})
-
+			
+			const randomIndex = Math.floor(Math.random() * arraySrcEffect.length)
 			arraySrcImage.forEach((src, index) => {
 				const nextIndex = (index + 1) % arraySrcImage.length;
 				const key = `distortionEffect${index + 1}`;
@@ -84,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					imagesRatio: aspectRatioY / aspectRatioX,
 					image1: arraySrcImage[nextIndex],
 					image2: src,
-					displacementImage: arraySrcEffect[index],
+					displacementImage: arraySrcEffect[randomIndex],
 					hover: false,
 				});
 			});
