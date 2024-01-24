@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					imagesRatio: aspectRatioY / aspectRatioX,
 					image1: arraySrcImage[nextIndex],
 					image2: src,
-					displacementImage: arraySrcEffect[randomIndex],
+					displacementImage: arraySrcEffect[2],
 					hover: false,
 				});
 			});
