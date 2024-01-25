@@ -46,11 +46,11 @@
   }
   
   .names__cards:hover .names__cards-item:nth-child(2) {
-    transform: rotate(0) translate(-2vw, -12%);
+    transform: initial;
   }
   
   .names__cards:hover .names__cards-item:nth-child(3) {
-    transform: rotate(16deg) translateY(-18%) translateX(0vw);
+    transform: rotate(20deg) translateY(-20%) translateX(9vw);
   }
   
   .names__cards:hover .names__cards-item:nth-child(4) {
